@@ -8,7 +8,11 @@ const Event = require("./models/Event");
 
 const app = express();
 
-app.use(cors());
+app.use(cors({
+  origin: "*",
+  methods: ["GET", "POST"],
+  allowedHeaders: ["Content-Type"]
+}));
 app.use(express.json());
 
 mongoose.connect(process.env.MONGODB_URL)
