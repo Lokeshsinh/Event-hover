@@ -1,0 +1,58 @@
+.reminders-card {
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.reminders-title {
+  margin: 0 0 20px 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.reminder-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.reminder-meeting-title {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.reminder-time {
+  margin: 0;
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.start-meeting-btn {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px 24px;
+  background: linear-gradient(135deg, #2d5f4d 0%, #1e4436 100%);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.start-meeting-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(45, 95, 77, 0.3);
+}
+
+.start-meeting-btn:active {
+  transform: translateY(0);
+}

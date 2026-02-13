@@ -1,0 +1,29 @@
+.project-progress-card {
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.progress-title {
+  margin: 0 0 24px 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.progress-chart-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.progress-chart {
+  width: 200px;
+  height: 200px;
+}
+
+.progress-circle {
+  transition: stroke-dashoffset 0.5s ease;
+}

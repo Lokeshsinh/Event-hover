@@ -1,0 +1,81 @@
+.project-analytics-card {
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.analytics-title {
+  margin: 0 0 24px 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.analytics-chart {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 12px;
+  height: 200px;
+}
+
+.chart-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.chart-bar-container {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.chart-bar {
+  width: 100%;
+  max-width: 60px;
+  border-radius: 100px;
+  position: relative;
+  transition: height 0.3s ease;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 8px;
+  min-height: 20px;
+}
+
+.chart-bar.solid {
+  background: linear-gradient(180deg, #3d6f5c 0%, #2d5f4d 100%);
+}
+
+.chart-bar.striped {
+  background: 
+    repeating-linear-gradient(
+      45deg,
+      #d1d5db,
+      #d1d5db 4px,
+      #e5e7eb 4px,
+      #e5e7eb 8px
+    );
+}
+
+.bar-value {
+  font-size: 11px;
+  font-weight: 600;
+  color: white;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.chart-bar.striped .bar-value {
+  color: #6b7280;
+  text-shadow: none;
+}
+
+.chart-label {
+  font-size: 13px;
+  font-weight: 500;
+  color: #6b7280;
+}

@@ -1,0 +1,194 @@
+.events-wrapper {
+  padding: 30px;
+  color: black;
+}
+
+/* Header */
+.events-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.events-header h2 {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.events-count {
+  font-size: 14px;
+  color: #9ca3af;
+}
+
+/* Table container */
+.events-table-container {
+
+  border: 1px solid #1f2937;
+  border-radius: 12px;
+  overflow: hidden;
+  max-height: 420px;
+  overflow-y: auto;
+
+
+}
+
+/* Table */
+.events-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.events-table thead {
+    color: white;
+  background: linear-gradient(135deg, #2d5f4d 0%, #1e4436 100%)
+}
+
+.events-table th {
+  text-align: left;
+  padding: 14px 20px;
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: white;
+}
+
+.events-table td {
+  padding: 16px 20px;
+  border-top: 1px solid #1f2937;
+  font-size: 14px;
+}
+
+.events-table tr:hover {
+  background: #111827;
+}
+
+/* Badge styles */
+.event-badge {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: lowercase;
+}
+
+/* Different event colors */
+.event-badge.mousemove {
+  background: rgb(25, 74, 74);
+  color: white;
+  font-weight: 700;
+}
+
+.event-badge.scroll {
+  background: rgb(97, 77, 27);
+  color: white;
+  font-weight: 700;
+}
+
+.event-badge.click {
+  background: rgba(33, 204, 220, 0.744);
+  color: white;
+  font-weight: 700;
+}
+
+.event-badge.keypress {
+  background: rgba(168, 85, 247, 0.1);
+  color:  white;
+  font-size: 700;
+}
+
+/* Data cell */
+.data-cell {
+  color: #9ca3af;
+  font-family: monospace;
+}
+
+/* Time cells */
+.time-cell {
+  color: #9ca3af;
+}
+
+.processed-cell {
+  color: #163028;
+  font-weight: 600;
+}
+
+
+
+/* ============================= */
+/* 📱 Tablet (max-width: 768px) */
+/* ============================= */
+
+@media (max-width: 768px) {
+
+  .events-wrapper {
+    padding: 16px;
+  }
+
+  .events-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  .events-header h2 {
+    font-size: 16px;
+  }
+
+  .events-count {
+    font-size: 12px;
+  }
+
+  .events-table-container {
+    max-height: 350px;
+  }
+
+  .events-table th,
+  .events-table td {
+    padding: 12px 14px;
+    font-size: 13px;
+  }
+
+  .event-badge {
+    padding: 5px 10px;
+    font-size: 11px;
+  }
+
+}
+
+
+/* ============================= */
+/* 📱 Small Mobile (max-width: 480px) */
+/* ============================= */
+
+@media (max-width: 480px) {
+
+  .events-wrapper {
+    padding: 12px;
+  }
+
+  .events-table-container {
+    border-radius: 8px;
+    max-height: 300px;
+  }
+
+  .events-table th,
+  .events-table td {
+    padding: 10px;
+    font-size: 12px;
+  }
+
+  .events-header h2 {
+    font-size: 14px;
+  }
+
+  .events-count {
+    font-size: 11px;
+  }
+
+  .event-badge {
+    padding: 4px 8px;
+    font-size: 10px;
+  }
+
+}
